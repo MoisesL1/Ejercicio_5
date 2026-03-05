@@ -14,3 +14,16 @@ for (int x = 0; x < cant; x++)
 
     usuarios.Add(usuario, contraseña);
 }
+
+Console.WriteLine("Ingrese el usuario: ");
+usuario = Console.ReadLine();
+
+if(usuarios.ContainsKey(usuario) == true)
+{
+    Console.WriteLine(usuarios[usuario]);
+}
+
+else
+{
+    Console.WriteLine("Ingreso un usuario invalido. ");
+}
